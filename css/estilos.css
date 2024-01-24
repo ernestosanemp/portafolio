@@ -1,0 +1,85 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(135deg,
+    #00B7D4,
+    #505488, 
+    #2f3f80,
+    #161569,
+    #5A4894,
+    #A950A1,
+    #FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(97, 6, 6, 0.7);
+}
+
+.subtitulo {
+    margin:0;
+    color: #e6dcdc;
+    display:inline;
+    font-size: 15px;
+    font-weight: 100;
+    text-shadow: 2px 2px 1px rgba(97, 6, 6, 0.7);
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 200px 0;
+    font-size: 30px;
+    font-weight: 60;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 50;
+}
+
+
+/* estilo d materialized */
+.carousel {
+    width: 600px;
+    height: 700px;
+}
+.carousel .carousel-item {
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+
+}
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position:fixed;
+    top: 10%;
+    left: 0%;
+    z-index: -1;
+    border-radius: 15px;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 05 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
